@@ -1,0 +1,42 @@
+
+import java.util.Scanner;
+public class FizzBuzz {
+    public static void fizzbuzz(int n)
+    {
+        
+        for(int i=0;i<n;i++)
+        {
+        
+            if(i%3==0 && i%5==0 )
+            {
+                
+                System.out.println("fizzbuzz numbers are:"+i);
+            }
+            else if(i%3==0)
+            {
+                System.out.println("number are fizz:"+i);
+            }
+            else if(i%5==0)
+            {
+                System.out.println("numbers are buzz:"+i);
+            }
+            else
+            {
+                System.out.println("the numbers are not fizzbuzz:"+i);
+            }
+        }
+    }
+
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("enter size of array:");
+        int n=sc.nextInt();
+        
+        
+        for(int i=0;i<n;i++)
+        
+        fizzbuzz( n);
+        
+    }
+    
+}
